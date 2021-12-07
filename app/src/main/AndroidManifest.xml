@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CwiczeniaKontrolki">
         <activity
+            android:name=".KawaActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DostawaActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
