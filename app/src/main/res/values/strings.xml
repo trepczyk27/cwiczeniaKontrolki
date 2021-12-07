@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">cwiczeniaKontrolki</string>
+    <string-array name="kawa_array">
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Americano</item>
+
+    </string-array>
+    <string-array name="dodatek_array">
+        <item>kakao</item>
+        <item>cynamon</item>
+        <item>imbir</item>
+        <item>kardamon</item>
+        <item>wanilia</item>
+
+    </string-array>
 </resources>
