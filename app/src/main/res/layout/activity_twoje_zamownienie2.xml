@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".twojeZamownienieActivity2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twoje Zamówienie:"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/text1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Kawa wielkosc jaka z dodatkiem"
+        android:textSize="20dp"
+        android:id="@+id/text2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-dodatek1"
+        android:layout_below="@id/text2"
+        android:id="@+id/text3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-dodatek2"
+        android:layout_below="@id/text3"
+        android:id="@+id/text4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-dodatek3"
+        android:layout_below="@id/text4"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/text5"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dane zamawiawiającego:"
+        android:layout_below="@id/text5"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/text8"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres:"
+        android:layout_below="@id/text8"
+        android:id="@+id/text6"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon:"
+        android:layout_below="@id/text6"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/text7"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akceptuje regulamin"
+        android:layout_below="@id/text7"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/text9"
+        android:layout_marginTop="20dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text9"
+        android:layout_below="@id/text7"
+        android:layout_marginTop="17dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zamów"
+        android:enabled="false"
+        android:layout_below="@id/text9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+</RelativeLayout>
