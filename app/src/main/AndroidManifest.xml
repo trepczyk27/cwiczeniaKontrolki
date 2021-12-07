@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CwiczeniaKontrolki">
         <activity
+            android:name=".KoniecActivity2"
+            android:exported="false" />
+        <activity
             android:name=".twojeZamownienieActivity2"
             android:exported="false" />
         <activity
