@@ -4,147 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KawaActivity2">
+    tools:context=".dodatkiActivity"
+    android:padding="20dp">
 
-
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Kawa:"
-    android:textSize="30dp"
-    android:layout_marginLeft="30dp"
-    android:layout_marginTop="50dp"
-    android:id="@+id/text1"/>
+    <TextView
+        android:id="@+id/tekst1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Kawa: "/>
 
     <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
+        android:id="@+id/jakaKawa"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text1"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:textSize="30dp" />
+        android:layout_below="@id/tekst1"/>
 
     <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
+        android:id="@+id/tekst2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spinner1"
-        android:layout_marginLeft="30dp"
-        android:text="Wielkość:"
-        android:textSize="30dp" />
-
-
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio1"
-                android:layout_below="@id/text2"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="30dp"
-                android:text="mała"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radio2"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="30dp"
-                android:layout_below="@id/text2"
-                android:text="średnia"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radio3"
-        android:layout_marginLeft="250dp"
         android:layout_marginTop="30dp"
-        android:layout_below="@id/text2"
-        android:text="duża"/>
+        android:layout_below="@id/jakaKawa"
+        android:textSize="26sp"
+        android:text="Wielkość: "/>
+
+
+
+    <RadioGroup
+        android:id="@+id/wielkosc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekst2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/mala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mała"
+            android:onClick="rozmiar"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/srednia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="średnia"
+            android:onClick="rozmiar"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/duza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="duża"
+            android:onClick="rozmiar"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tekst3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dodatki:"
-        android:layout_below="@+id/radio3"
-        android:layout_marginLeft="30dp"
-        android:textSize="30dp"
-        android:layout_marginTop="50dp"
-        android:id="@+id/text4"/>
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/wielkosc"
+        android:textSize="26sp"
+        android:text="Dodatki: "/>
 
-    <CheckBox
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/checkboxy"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text4"
-        android:layout_marginLeft="30dp"
+        android:layout_below="@id/tekst3"
+        android:orientation="vertical">
 
-        android:text="cukier"
-        android:id="@+id/c1"
-        />
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/c1"
-        android:layout_marginLeft="30dp"
+        <CheckBox
+            android:id="@+id/cukier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkboxClicked"
+            android:text="Cukier"/>
 
-        android:text="miód"
-        android:id="@+id/c2"
+        <CheckBox
+            android:id="@+id/miod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkboxClicked"
+            android:text="Miód"/>
 
-        />
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/c2"
-        android:layout_marginLeft="30dp"
+        <CheckBox
+            android:id="@+id/mleko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkboxClicked"
+            android:text="Mleko"/>
 
-        android:text="miód"
-        android:id="@+id/c3"
+        <CheckBox
+            android:id="@+id/przypawy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkboxClicked"
+            android:text="Przyprawy"/>
 
-        />
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/c3"
-        android:layout_marginLeft="30dp"
+        <Spinner
+            android:id="@+id/jakiePrzyprawy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"/>
 
-        android:text="mleko"
-        android:id="@+id/c4"
-
-        />
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/c4"
-        android:layout_marginLeft="30dp"
-
-        android:text="przyprawy"
-        android:id="@+id/c5"
-
-        />
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/c5"
-                android:layout_marginLeft="80dp"
-                android:id="@+id/spinner2"
-                />
+    </LinearLayout>
 
     <Button
+        android:id="@+id/cofnij"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b1"
-        android:layout_below="@+id/spinner2"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="50dp"
-        android:text="cofnij"/>
+        android:layout_below="@id/checkboxy"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:text="COFNIJ"/>
+
     <Button
+        android:id="@+id/dalej"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b2"
-        android:layout_below="@+id/spinner2"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="50dp"
-        android:text="dalej"/>
+        android:layout_below="@id/checkboxy"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:text="DALEJ"/>
+
 </RelativeLayout>

@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:layout_marginLeft="65dp"
-            android:enabled="false"
+
             android:text="Gdynia, Sambora 48"
             android:id="@+id/edtAdres"/>
     </LinearLayout>
@@ -68,7 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:layout_marginLeft="65dp"
-            android:enabled="false"
+
+
             android:text="+48 111 111 111"
             android:id="@+id/edtTele"
             />
@@ -82,16 +83,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/line2"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
-        android:text="Cofnij"/>
+        android:layout_marginTop="50dp"
+        android:text="Cofnij"
+        android:id="@+id/cofnij"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/line2"
-        android:layout_toRightOf="@id/text3"
+        android:layout_marginLeft="150dp"
 
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="150dp"
-        android:text="Dalej"/>
+        android:layout_toRightOf="@id/text3"
+        android:text="Dalej"
+        android:id="@+id/dalej"/>
 </RelativeLayout>
