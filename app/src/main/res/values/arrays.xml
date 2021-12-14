@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="kawy_array" />
+    <string-array name="kawy_array">
+        <item>Espresso</item>
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Americano</item>
+    </string-array>
+    <string-array name="przyprawy_array">
+        <item>Kakao</item>
+        <item>Cynamon</item>
+        <item>Imbir</item>
+        <item>Kardamon</item>
+        <item>Wanilia</item>
+    </string-array>
+    <string name="zamow">Twoje zamówienie jest w trakcie realizacji</string>
 </resources>

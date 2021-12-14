@@ -82,7 +82,7 @@ public class KawaActivity2 extends AppCompatActivity {
 
         przyprawy = findViewById(R.id.jakiePrzyprawy);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
-                R.array.przypawy_array, android.R.layout.simple_spinner_item);
+                R.array.przyprawy_array, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         przyprawy.setAdapter(adapter2);
 
